@@ -1,0 +1,8 @@
+[all:vars]
+env=production
+
+[webservers]
+www.glucosetracker.net certbot_admin_email=admin@glucosetracker.net nginx_use_letsencrypt=true
+
+[dbservers]
+www.glucosetracker.net

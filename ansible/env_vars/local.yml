@@ -1,0 +1,105 @@
+---
+
+# Database settings.
+db_user: glucosetracker
+db_name: glucosetracker
+db_password: password
+
+
+# Gunicorn settings.
+gunicorn_num_workers: 1
+
+# Setting this to 1 will restart the Gunicorn process each time
+# you make a request, basically reloading the code. Very handy
+# when developing. Set to 0 for unlimited requests (default).
+gunicorn_max_requests: 1
+
+
+# Nginx settings.
+nginx_server_name: 192.168.33.10
+
+
+# SMTP settings.
+smtp_host: smtp.gmail.com
+smtp_user: admin@example.com
+smtp_password: mypassword
+
+
+# Application settings.
+django_settings_file: settings.local
+
+load_random_glucose_data: yes
+test_user: jsmith
+
+mailchimp_api_key: na
+mailchimp_list_id: na
+
+aws_access_key_id: na
+aws_secret_access_key: na
+
+twitter_api_key: na
+twitter_api_secret: na
+twitter_access_token: na
+twitter_token_secret: na
+
+django_secret_key: akr2icmg1n8%z^3fe3c+)5d0(t^cy-2_25rrl35a7@!scna^1#
+
+run_django_syncdb: yes
+run_django_south_migration: yes
+run_django_collectstatic: yes
+
+
+ssl_crt: |
+  -----BEGIN CERTIFICATE-----
+  MIID4zCCAsugAwIBAgIJAPYfXHdvt+IOMA0GCSqGSIb3DQEBBQUAMIGHMQswCQYD
+  VQQGEwJVUzETMBEGA1UECAwKU29tZS1TdGF0ZTEbMBkGA1UECgwSR2x1Y29zZVRy
+  YWNrZXIubmV0MR0wGwYDVQQDDBQqLmdsdWNvc2V0cmFja2VyLm5ldDEnMCUGCSqG
+  SIb3DQEJARYYYWRtaW5AZ2x1Y29zZXRyYWNrZXIubmV0MB4XDTE0MDMzMDIwMTgy
+  MVoXDTI0MDMyNzIwMTgyMVowgYcxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApTb21l
+  LVN0YXRlMRswGQYDVQQKDBJHbHVjb3NlVHJhY2tlci5uZXQxHTAbBgNVBAMMFCou
+  Z2x1Y29zZXRyYWNrZXIubmV0MScwJQYJKoZIhvcNAQkBFhhhZG1pbkBnbHVjb3Nl
+  dHJhY2tlci5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDdzq1B
+  Q5zx7seditON7Jo7mJXdCZ1fZ4bJPKkYRCXM9/+f6xU1XcwLGR+2nwvv0q4gw5As
+  uZO3WwsJf94ztJg2Cf/jQotcv/BKnQFQymjYdC5DjYTGapzZZPWNTYLhuHdnfSE3
+  D7c/gjloAsNKVQ/eSyjDocJC45aaqBOQnVfV3p6RL4Azw3lYZqKTQ+nHsd6I+Scd
+  Q43a7i0swjcSqnICKuy12jk2g9nBExfmDng3+j0Hs6NhvwqrXNBPTHgOr2/Flsgi
+  tzvTpPZdvbPo+m5klplEPo/CqkrW6hQJU5k962O/rbt2VF5b8hjsx/fVviW2Zdal
+  ggzHRgeHypBpzonzAgMBAAGjUDBOMB0GA1UdDgQWBBTznSp39HEMbCWtH1qxfi2T
+  0aMghzAfBgNVHSMEGDAWgBTznSp39HEMbCWtH1qxfi2T0aMghzAMBgNVHRMEBTAD
+  AQH/MA0GCSqGSIb3DQEBBQUAA4IBAQDFXbi6JQOTwDt6YiUGJsW7j0nqPJyxd1CD
+  vX7ZS8k3bi0db1VKcQNIE9qhSL7j1ATh9AVG+2skPX5FgYlionlRiEYji/9q6oiF
+  o8raU4+LUsvZ3i1EoIX3/tzN2sHb7VqQ4ITlMORGITTEAdu8dDvoJ5+TJHAO6yL/
+  KKYCM1W3p8gg8fGs2QhX6p+MzJOSxPz57oX6Irr31nYH1kmQEIEXcFBYzzplBvvx
+  ycOHT4Ip6Plbb6r3vH7UXuk9nROWWJ1P+BEnqDRAKDlvxEodm7IFhyFZKqQg2w6t
+  1eldr9g5ybqGnSQ8h3Ng6P5TOFnjA3qZuoemwEzKcvtHQ3d26bma
+  -----END CERTIFICATE-----
+
+ssl_key: |
+  -----BEGIN PRIVATE KEY-----
+  MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDdzq1BQ5zx7sed
+  itON7Jo7mJXdCZ1fZ4bJPKkYRCXM9/+f6xU1XcwLGR+2nwvv0q4gw5AsuZO3WwsJ
+  f94ztJg2Cf/jQotcv/BKnQFQymjYdC5DjYTGapzZZPWNTYLhuHdnfSE3D7c/gjlo
+  AsNKVQ/eSyjDocJC45aaqBOQnVfV3p6RL4Azw3lYZqKTQ+nHsd6I+ScdQ43a7i0s
+  wjcSqnICKuy12jk2g9nBExfmDng3+j0Hs6NhvwqrXNBPTHgOr2/FlsgitzvTpPZd
+  vbPo+m5klplEPo/CqkrW6hQJU5k962O/rbt2VF5b8hjsx/fVviW2ZdalggzHRgeH
+  ypBpzonzAgMBAAECggEBAIOuu/VPKtIHLMM/NDHCEh7ni7Faj++gCslWFh2t97Mk
+  WMKcUk8IjKbaF5XX/sI2leIluGaVFjl496iAHW8c/HC4pw5I52v9F690Xt+UC4LW
+  FtFMJ1OU3+HAqndlWRqg5WKvSxThY610ppg1a7OppG4YuO7MDgSgET1oI5VrlEYH
+  dZA1esy9O/j4wGoLMObl+jss28QjkEGj93mr4GXB4N9t2V82xjsx/yq2aOisoug4
+  5iQnii/aFBEZFnNIzBOt5lYiEdL8MH1Etd6aiv4NyKgzPWz8a3AEvKXsw0qNxQXD
+  Ha1YbZ0JGytiMUn0NnCsPHmYogSF2jJhYOgRaRGCkCECgYEA9dBrTmMFmckeptne
+  Zbiv8lbmwIv4RpEHM/yHijywoYz8JQ84fORMe4cQ5v3Kv+2JsxQYM9KoNDcsViZb
+  5x54QpWCDm78mMzFvA5ECSYx4bsTE/llR7oUtr9SKHE2vjqtt6N66jG3XiN5ADpR
+  1usKJY96SCGongorJT2fEKHyExUCgYEA5v+YTUb9jzHfQL093F6nlxLxbjg8lxQU
+  VtGeVGUbbpjTjgGj4l1fsuN2hXLEwyDbj4YwrCyoAtUPZdbvrPAmXz7RD5KHNsTv
+  rri/HG0wx3iP4THwdxaO6l98fQjhZ6KtbKB827Ty9Kne1t+j8k0JqOTn9B+GK1Xi
+  /PeX8z8+iucCgYAZDSeScocEmDmWeYevyDWuNesIXntr/aXFR4wsq2i43hxoTnfM
+  Spv8ztQLJnw+OSAabwbUaTiZMbJECV6+XB2Xc5Mwk2EM1XmlY7LNV+YngiA8neMT
+  f0RTJ4Zg9sDEfEht+awyJ+TvJCBVxJvIkmWTVF768Os1SAYDopcOY+K+zQKBgDqj
+  DwouxxaeVkmcwCM8c9ZJnLeZ1ueS1UbklwhdUgVVDf6yM+O2SCCk1OUzKPdPU+yu
+  55QNEekGJI55bQW9QEBVNcR6MZCZlS4I/5o7rXI1DHDhuGTCeSzNaFBk/LLN/K/i
+  XU94M2Qf6s0on/lVzOnukWLKzcgaWTBVuWCp4TppAoGAdle+DOT7J7EpBkeMJs41
+  9Zd19bZFUVHhyadiNV58Gl/rs3KyO0FpaH+K5REpMctSQnujfjPTYKUbyJJ1aQKB
+  zw5OYmVdyv1I2ufrwIuYXDxWG7334yiQT1SmvzZqAKsmc17IJS4w8LMmyPbrp8e7
+  g090MhQyAqzupKJZgap62rk=
+  -----END PRIVATE KEY-----
